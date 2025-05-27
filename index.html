@@ -75,15 +75,15 @@
    const timeBox = document.getElementById("timeBox");
    timeBox.innerHTML = "접속 시간: " + now.toLocaleString()
  </script>
-
-
-
-
-
-
-
-
-
+<h1>나의 홈페이지 2nd</h1>
+ <div id="timeBox"></div>
+ <p id="visitCount"></p>
+ <script>
+ let count = localStorage.getItem("visitCount") || 0;
+ count++;
+ localStorage.setItem("visitCount", count);
+ document.getElementById("visitCount").textContent = "이 페이지에 " + count + "번 방문하
+셨습니다."
 
 
 </body>
