@@ -68,6 +68,12 @@
    }
  }
  alert("비밀번호가 틀렸습니다.");
+
+   <div id="timeBox"></div>
+ <script>
+   const now = new Date();
+   const timeBox = document.getElementById("timeBox");
+   timeBox.innerHTML = "접속 시간: " + now.toLocaleString()
  </script>
 
 
